@@ -10,7 +10,9 @@ No code. Just vibes.
 
 ## Compile
 
-English will ask OpenAI what it thinks your program should do. It will then emit an intermediate C program, which will be compiled into a binary.
+The compiler is currently written in Python. We plan to bootstrap it later.
+
+English will ask OpenAI what it thinks your program should do. It will then emit LLVM-IR, which will be compiled into a binary via LLVM.
 
 ```bash
 engl compile [src_dir]
